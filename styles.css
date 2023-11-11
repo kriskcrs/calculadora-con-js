@@ -1,0 +1,80 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f7ef;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 200px repeat(5, 70px);
+    background-color: #dd440ce2;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #02053a8b;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #dd440ce2;
+    box-shadow: 5px 5px 15px -3px #02021e, -5px -5px 15px 3px #dd4a15e2;
+}
+
+button.operador{
+    background-color: #6e200b;
+}
+
+button-active {
+    background-color: #04045b;
+}
+
+button-focus {
+    outline: none;
+}
+
+.display {
+    grid-column: 1/-1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #02021e;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #0000006a;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+.col-3 {
+    grid-column: span 3;
+}
+
+#vactual {
+    font-size: 1.5em;
+    color: rgb(236, 224, 224);
+}
+
+#vanterior {
+    font-size: 2.0em;
+}
